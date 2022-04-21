@@ -1,0 +1,74 @@
+a[target='_blank']:after {
+  content: '\1F5D7'
+}
+
+.logo {
+  background-image: url('assets/images/sc_logo.svg');
+  display: block;
+  height: 48px;
+  width: 221px;
+}
+
+/*
+  Hides Sitecore Experience Editor markup,
+  if you run the app in connected mode while the Sitecore cookies
+  are set to edit mode.
+*/
+.scChromeData, .scpm { display: none !important; }
+.blue.item{
+  background-color:blue !important;
+  color: #fff;
+}
+.main_container{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+ 
+  .jss-main-layout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .item{
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ececec;
+    
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      background-color: #fbf7f7;
+    }
+  
+  }
+  .jss-main-2-layout{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    .item{
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ececec;
+     
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      background-color: #fbf7f7;
+    }
+  }
+  .router_link{
+    display: flex;
+    margin: 20px 0 0 10px;
+    a{
+      background-color: #eae4e4;
+      color: #000;
+      padding: 10px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  }
+
+  
+}
+
+

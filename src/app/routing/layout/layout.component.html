@@ -1,0 +1,20 @@
+ <app-navigation></app-navigation>
+
+ <sc-placeholder name="jss-header" [rendering]="route" (loaded)="onPlaceholderLoaded($event)"></sc-placeholder>
+<div class="container main_container" >
+  <ng-container *ngIf="state === LayoutState.Layout">
+    <app-visitor-identification></app-visitor-identification>
+   
+  <div class="jss-main-2-layout">
+    <sc-placeholder name="jss-main-2"  [rendering]="route" (loaded)="onPlaceholderLoaded($event)"></sc-placeholder>
+  </div>
+  <div class="jss-main-layout"  >
+    <sc-placeholder name="jss-main" [rendering]="route" (loaded)="onPlaceholderLoaded($event)"></sc-placeholder>
+  </div>
+  
+  </ng-container>
+
+  <app-not-found *ngIf="state === LayoutState.NotFound" [errorContextData]="errorContextData"></app-not-found>
+  <app-server-error *ngIf="state === LayoutState.Error"></app-server-error>
+</div>
+

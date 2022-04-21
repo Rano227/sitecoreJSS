@@ -1,0 +1,41 @@
+.main-bookings{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin-bottom: 20px;
+    .result-list{
+        display: flex;
+        flex-direction: column;
+        background: #e8e8e8;
+        padding: 30px;
+        border-radius: 5px
+        h3{
+            font-size: 40px;
+    margin: 0px 0 20px 0;
+        }
+        .bflight-time{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            color: #894f4f;
+            font-weight: bold;
+        }
+        .saudi-logo{
+            height: 30px;
+            width: 30px;
+        }
+
+    }
+    .back-btn{
+        margin: 13px 0 0 0;
+        display: flex;
+        a{
+            border: 1px solid #ececec;
+    background-color: #465d72;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+        }
+    }
+}

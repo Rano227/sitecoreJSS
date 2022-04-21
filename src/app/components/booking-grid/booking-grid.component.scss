@@ -1,0 +1,85 @@
+.booking-main{
+    display: flex;
+    flex-direction: column;
+    .booking-grid{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .main-heading{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background: #b0e3e5;
+            justify-content: center;
+            align-items: center;
+            h2{
+                font-weight: bold;
+    font-size: 30px;
+    background-color: #b0e3e5;
+    padding: 10px;
+   
+            }
+            img{
+                height: 30px;
+    width: 30px;
+            }
+        }
+        .main-bgrids{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            margin: 0 auto;
+
+            .bitem{
+                
+                justify-content: center;
+                align-items: center;
+            border: 1px solid #ececec;
+            margin: 20px;
+            border-radius: 5px;
+         
+            background-color: beige;
+                a{
+                   
+                    display: flex;
+                    flex-direction: column;
+                cursor: pointer;
+                padding: 5px;
+                color:#000;
+                text-decoration: none;
+                
+               
+            }
+           
+                
+           
+                .b-title{
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                .bdate{
+                    font-size: 12px;
+                }
+                .flight-time{
+                    font-size:12px;
+                }
+            }
+            :first-of-type{
+              //  margin-left: 0;
+            }
+            :last-child{
+                margin-right: 0;
+            }
+           
+        }
+    }
+    .bitem:hover a{
+       
+            background-color:#003191;
+            color:#fff !important;
+        
+    }
+}
