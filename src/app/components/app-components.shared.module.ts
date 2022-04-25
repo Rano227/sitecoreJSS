@@ -6,7 +6,11 @@ import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { StyleguideSpecimenComponent } from './shared/styleguide-specimen/styleguide-specimen.component';
 import { JssModule } from '@sitecore-jss/sitecore-jss-angular';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+//import { MatFormFieldModule } from '@angular/material/form-field';
 /*
   This module is imported by the generated app-components.module.ts.
   You can use this module to provide shared Angular components that are not
@@ -21,13 +25,19 @@ import { JssModule } from '@sitecore-jss/sitecore-jss-angular';
     RouterModule,
     JssModule,
     FormsModule,
-    
+    FlexLayoutModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+   // MatFormFieldModule,
   ],
   exports: [
     CommonModule,
     TranslateModule,
     RouterModule,
     FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
     StyleguideSpecimenComponent
   ],
   declarations: [

@@ -1,18 +1,15 @@
 import { CommonFieldTypes, SitecoreIcon, Manifest } from '@sitecore-jss/sitecore-jss-manifest';
 
 /**
- * Adds the component1 component to the disconnected manifest.
+ * Adds the formmaterial component to the disconnected manifest.
  * This function is invoked by convention (*.sitecore.ts) when `jss manifest` is run.
  */
-export default function component1(manifest: Manifest) {
+export default function formmaterial(manifest: Manifest) {
   manifest.addComponent({
-    name: 'Component1',
+    name: 'Formmaterial',
     icon: SitecoreIcon.DocumentTag,
-    params: ['color'],
-    placeholders: ['jss-main-2', 'jss-main'],
     fields: [
       { name: 'heading', type: CommonFieldTypes.SingleLineText },
-      { name: 'content', type: CommonFieldTypes.RichText },
     ],
   });
 }

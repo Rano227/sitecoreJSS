@@ -20,7 +20,7 @@ export class Component1Component implements OnInit {
       console.log(this.color); // price
     }
   );
-    //this.color = this.rendering.params.color;
+    this.color = this.rendering.params.color;
    // console.log(this.color +'hello');
     // remove this after implementation is done
     console.log('component1 component initialized with component data', this.rendering);

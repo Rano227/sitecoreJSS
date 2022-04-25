@@ -14,14 +14,20 @@ import { JssTranslationLoaderService } from './i18n/jss-translation-loader.servi
 import { GraphQLModule } from './jss-graphql.module';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 import { JssDataFetcherService } from './jss-data-fetcher.service';
-
+//import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+//import { NgMaterialModule } from './ng-material/ng-material.module';
+//import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
   imports: [
     // withServerTransition is needed to enable universal rendering
     BrowserModule.withServerTransition({ appId: 'my-app' }),
     BrowserTransferStateModule,
     HttpClientModule,
-  //  FlexLayoutModule,   
+   // FormsModule,
+    // ReactiveFormsModule,
+   // NgMaterialModule,
+   //MatFormFieldModule,
+  // FlexLayoutModule,   
      GraphQLModule,
     MetaModule.forRoot(),
     RoutingModule,

@@ -1,0 +1,32 @@
+<div class="main-search-form">
+  <h2 *scRichText="rendering.fields.heading"></h2>
+  <div class="form-group">
+    <div class="s-form-inline"><label *scText="rendering.fields.DepartureLabel"></label>
+      <span class="input-inline"><select>
+          <option>IND</option>
+          <option>UAE</option>
+          <option>Abu</option>
+        </select>
+      </span>
+    </div>
+    <div class="s-form-inline"><label *scText="rendering.fields.ArrivalLabel"></label> <span
+        class="input-inline"><select>
+          <option>IND</option>
+          <option>UAE</option>
+          <option>Abu</option>
+        </select></span> </div>
+    <div class="s-form-inline"> <label *scText="rendering.fields.DepartureDate"></label> <span
+        class="input-inline"><input type="date" class="date-input" name="arrival-date" /></span> </div>
+    <div class="s-form-inline"> <label *scText="rendering.fields.ReturnDate"></label> <span class="input-inline"><input
+          type="date" class="date-input" name="depart-date" /></span> </div>
+    <div class="actions-btn">
+      <span><a routerLink="/SaudiaHome/Booking" rel="noopener noreferrer"
+          *scText="rendering.fields.SearchText"></a></span>
+      <span><a routerLink="/SaudiaHome/Result" rel="noopener noreferrer" *scText="rendering.fields.ResultText"
+          class="result-btn"></a></span>
+    </div>
+    <div *ngIf="showbookingpagebutton == 'showbookingpagebutton'">
+    <div *scText="rendering.fields.Search" >{{showbookingpagebutton}}</div>
+  </div>
+  </div>
+</div>
